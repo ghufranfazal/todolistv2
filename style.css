@@ -25,19 +25,32 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
+  background-size: 40px 40px;
+
+  /* Vertical lines followed by horizontal lines */
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.15) 1px, transparent 1px);
+
+  /* background-color: #fffdf6; 
+  background-image: linear-gradient(#e1f0fa 1px, transparent 1px);
+  background-size: 100% 30px; */
 }
 body {
   position: relative;
+  /* z-index: -1; */
 }
 .version {
   position: absolute;
   top: -60px;
-  z-index: 1;
+  z-index: 6;
   font-size: 10rem;
   font-weight: 900;
-  color:#3a76e4;
-  opacity: 0.5;
+  color: #3a76e4;
 }
 main {
   z-index: 9;
@@ -45,15 +58,16 @@ main {
   height: 70%;
 
   background-color: rgba(77, 134, 241, 0.2);
-  border-radius: 10px;
   backdrop-filter: blur(10px);
-  box-shadow: -1px 5px 8px 0px #3e94a1;
+  box-shadow: -1px 2px 1px 0px #43838d5e;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #6596f0;
+  transition: all 0.3s ease;
 }
+
 .todo-input-button {
   width: 60%;
   padding: 10px;
@@ -71,7 +85,7 @@ main {
   font-size: 1.3rem;
   border-radius: 10px;
 }
-input::placeholder{
+input::placeholder {
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.8;
@@ -85,6 +99,9 @@ input::placeholder{
   background-color: #3a76e4;
   color: white;
   cursor: pointer;
+}
+#add:hover {
+  background-color: #3368ca;
 }
 .todo-list {
   width: 55%;
@@ -105,8 +122,8 @@ input::placeholder{
   justify-content: space-between;
   align-items: center;
 }
-.para{
-    padding: 5px;
+.para {
+  padding: 5px;
 }
 .btn {
   padding: 10px;
@@ -121,7 +138,11 @@ input::placeholder{
   color: white;
   margin-right: 10px;
 }
+
 .delete {
   background-color: #c51616;
   color: white;
+}
+.delete:hover {
+  background-color: #991111;
 }

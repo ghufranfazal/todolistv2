@@ -77,6 +77,10 @@ edit.addEventListener("click", () => {
 
     edit.textContent = "Save";
     edit.style.backgroundColor = "green";
+    // edit.addEventListener('mouseenter',()=>{
+    //   edit.style.backgroundColor = "red"
+    //   console.log("Mouse ENtered")
+    // })
   } else {
     // Edit Mode OFF
 
