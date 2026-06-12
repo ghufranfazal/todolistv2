@@ -1,7 +1,9 @@
 const add = document.querySelector('#add')
 const todoList = document.querySelector('.todo-list')
 const inp = document.querySelector('input')
-const h3 = document.querySelector('h3')
+// const h3 = document.querySelector('h3')
+
+
 
 add.addEventListener('click',()=>{
     let value = inp.value;
@@ -18,3 +20,4 @@ add.addEventListener('click',()=>{
     // console.log(value)
     inp.value = "";
 })
+
