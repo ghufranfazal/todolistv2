@@ -110,6 +110,14 @@ input::placeholder {
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
+
+  padding: 5px;
+  overflow: auto;
+  scrollbar-width:none; /* Options: auto | thin | none */
+  scrollbar-color: #888888 #f1f1f1;
+}
+.todo-list-buttons {
+  display: flex;
 }
 
 .list {
@@ -124,6 +132,10 @@ input::placeholder {
 }
 .para {
   padding: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+  overflow: auto;
 }
 .btn {
   padding: 10px;
