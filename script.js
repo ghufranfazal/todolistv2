@@ -55,10 +55,4 @@ function addTodo() {
 // Add button click
 add.addEventListener("click", addTodo);
 
-// Enter key press
-inp.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    addTodo();
-  }
-});
 
