@@ -109,6 +109,7 @@ main {
 .edit {
   background-color: #cc9f0a;
   color: white;
+  margin-right: 10px;
 }
 .delete {
   background-color: #c51616;
