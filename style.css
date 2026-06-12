@@ -64,10 +64,11 @@ main {
 }
 .todo-input-button input {
   width: 400px;
-  padding: 20px 20px;
+  padding: 17px;
   outline: none;
   border: none;
 
+  font-size: 1.3rem;
   border-radius: 10px;
 }
 input::placeholder{
