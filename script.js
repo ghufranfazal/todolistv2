@@ -48,11 +48,14 @@ function addTodo() {
       edit.style.backgroundColor = "#cc9f0a";
     }
   });
-
+  // Enter key press
+  inp.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      addTodo();
+    }
+  });
   inp.value = "";
 }
 
 // Add button click
 add.addEventListener("click", addTodo);
-
-
