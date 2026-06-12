@@ -48,7 +48,11 @@ function addTodo() {
       edit.style.backgroundColor = "#cc9f0a";
     }
   });
-  // Enter key press
+
+// Add button click
+add.addEventListener("click", addTodo);
+
+ // Enter key press
   inp.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       addTodo();
@@ -56,6 +60,3 @@ function addTodo() {
   });
   inp.value = "";
 }
-
-// Add button click
-add.addEventListener("click", addTodo);
