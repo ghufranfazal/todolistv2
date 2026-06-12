@@ -8,7 +8,7 @@ add.addEventListener("click", () => {
   
   let list = document.createElement("div");
   list.classList.add("list");
-  todolist.append(list);
+  todolist.prepend(list);
   
   let para = document.createElement("h3");
   para.classList.add("para");
